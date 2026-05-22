@@ -1,0 +1,22 @@
+import pandas as pd
+df = pd.read_csv("ChurnZero_dataset_v1.csv")
+print("number of customers and columns:")
+print(df.shape)
+print("\n First 5 customers :")
+print(df.head())
+print("\nHow many churned vs stayed:")
+print(df['churn'].value_counts())
+print("\nAverage age - churners vs non-churners:")
+print(df.groupby("churn")['age'].mean())
+
+print("\nAverage digital logins - churners vs non churners:")
+print(df.groupby('churn')['total_digital_logins'].mean())
+print("\nAverage balance - churners vs non churners:")
+print(df.groupby('churn')['avg_monthly_balance'].mean())
+print("/nAverage complaints - churners vs non-churners:")
+print(df.groupby('churn')['total_complaints'].mean())
+print("\nAverage satisfaction score - churners vs non churners:")
+print(df.groupby('churn')['satisfaction_score'].mean())
+print("\nAverage tenure - churners vs non churners:")
+print(df.groupby('churn')['tenure_months'].mean())
+ 
