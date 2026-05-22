@@ -196,5 +196,5 @@ ChurnZero26/
 
 ---
 
-*Built by: [Kajal Kumari] | [Manipal University Jaipur]*
+*Built by: Kajal Kumari | Manipal University Jaipur *
 *ChurnZero 26 — Banking Customer Churn Prediction Hackathon*
